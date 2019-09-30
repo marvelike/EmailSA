@@ -1,8 +1,6 @@
-from django.shortcuts import render, HttpResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import Header, Content, Footer
-from EmailSa import settings
 from .serializer import HeaderSerializer, FooterSerializer, ContentSerializer
 
 # Create your views here.
