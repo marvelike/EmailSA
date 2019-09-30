@@ -2,12 +2,12 @@ from rest_framework import serializers
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from newsletter.models import Header, Content, Footer
+from models import Header, Content, Footer
 from EmailSa import settings
-from newsletter.serializer import HeaderSerializer
+from serializer import HeaderSerializer
 from django.db import models
 from django.urls import path
-from newsletter.views import HeaderView
+from .views import HeaderView
 
 #Serializer.py
 class HeaderSerializer(serializers.Serializer):
